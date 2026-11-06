@@ -1,3 +1,4 @@
+tplotlib
 # Manual técnico — Solución base
 
 **ADAG 2026-B · Grupo 2 · Reparto de presupuesto y selección de participantes**
