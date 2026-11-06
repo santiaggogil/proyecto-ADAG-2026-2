@@ -1,80 +1,169 @@
 # ADAG 2026-B · Grupo 2 — Reparto de presupuesto y selección de participantes
 
-Solución base de la primera entrega. En cada ronda:
+Solución base de la primera entrega del proyecto de Análisis y Diseño de Algoritmos (Universidad de Caldas).
 
-1. **Parte 2 – Selección:** el algoritmo voraz submodular elige `k` participantes (garantía `1 − 1/e`, Nemhauser, Wolsey y Fisher, 1978).
-2. **Parte 1 – Reparto:** el algoritmo voraz con montículo reparte el presupuesto `B` entre los elegidos (óptimo exacto, `O(N + B log N)`).
+En cada ronda, el programa toma dos decisiones:
 
-El proceso se repite durante las `T` rondas del archivo, respetando el presupuesto total de cada nodo.
+1. **Parte II – Selección:** el algoritmo voraz submodular elige `k` participantes. Garantiza al menos `1 − 1/e ≈ 63,2 %` del óptimo (Nemhauser, Wolsey y Fisher, 1978) y cuesta `O(k·N²)`.
+2. **Parte I – Reparto:** el algoritmo voraz con montículo reparte el presupuesto `B` entre los elegidos. Es óptimo exacto y cuesta `O(N + B log N)`.
+
+El proceso se repite durante las `T` rondas del archivo de entrada, respetando el presupuesto total de cada nodo.
+
+
+## Documentación
+
+El informe técnico y el manual técnico se entregan aparte, en PDF:
+
+- **Informe técnico:** formalización, prueba de NP-dificultad, demostraciones y resultados experimentales.
+- **Manual técnico:** implementación, estructura del código, formatos de entrada y salida, ejecución y limitaciones.
+
 
 ## Requisitos
 
-- Python 3.10 o superior (probado con Python 3.13).
-- La solución usa solo la biblioteca estándar. `matplotlib` es opcional y solo se usa en `experimentos.py` para dibujar las figuras.
+- Python 3.10 o superior (probado con Python 3.13.7).
+- La solución usa solo la biblioteca estándar de Python.
+- `matplotlib` es opcional y solo se usa en `experimentos.py` para dibujar las figuras.
 
-## Ejecución (Windows / PowerShell)
 
-```powershell
-cd proyecto_adag_g2
-python main.py                                        # todos los casos de casos/
-python main.py casos\entrada_G2_red_15_nodos.json     # solo el caso de la profesora
-python main.py ruta\a\otro_caso.json                  # cualquier archivo con el mismo formato
-python main.py --sin-verificacion                     # solo algoritmos (sin fuerza bruta ni DP)
+## Obtener el proyecto
+
+```
+git clone https://github.com/santiaggogil/proyecto-ADAG-2026-2.git
+cd proyecto-ADAG-2026-2
 ```
 
-En Linux/macOS, use `python3` y `/` en las rutas.
+Todos los comandos de este README se ejecutan desde la carpeta raíz del proyecto, la que contiene `main.py`. Funcionan igual en CMD, PowerShell y la terminal de VS Code (Terminal → Nuevo terminal). En Linux o macOS, use `python3` en lugar de `python` y `/` en lugar de `\` en las rutas.
 
-### Salidas (carpeta `salidas/`)
 
-| Archivo | Contenido |
-|---|---|
-| `resultado_<caso>.json` | Resultados completos: selección, ganancias marginales, reparto, verificación, tiempos |
-| `traza_<caso>.md` | La misma traza en formato legible (tablas por ronda) |
-| `tiempos.csv` | Tiempo por caso (mediana y mínimo de 5 repeticiones) |
+## Ejecución de la solución base
 
-El programa termina con código 0 si todas las restricciones obligatorias se cumplen.
+Ejecutar todos los casos de la carpeta `casos`:
+
+```
+python main.py
+```
+
+Ejecutar solo el caso de la profesora:
+
+```
+python main.py casos\entrada_G2_red_15_nodos.json
+```
+
+Ejecutar cualquier otro archivo con el mismo formato:
+
+```
+python main.py ruta\a\otro_caso.json
+```
+
+Ejecutar solo los algoritmos, sin calcular los óptimos exactos (fuerza bruta y programación dinámica):
+
+```
+python main.py --sin-verificacion
+```
+
+Usar más repeticiones para medir el tiempo (por defecto, 5):
+
+```
+python main.py --repeticiones 20
+```
+
+El programa termina con código 0 si todos los casos se leyeron bien y se cumplen todas las restricciones obligatorias.
+
+
+## Salidas
+
+La carpeta `salidas` se crea automáticamente al ejecutar. `main.py` genera:
+
+- `resultado_<caso>.json`: resultados completos. Incluye la selección, las ganancias marginales, el reparto, la verificación de restricciones, la comparación con el óptimo y los tiempos.
+- `traza_<caso>.md`: la misma traza en formato legible, con tablas por ronda.
+- `tiempos.csv`: una fila por caso, con el tiempo (mediana y mínimo de 5 repeticiones), las utilidades y el cumplimiento de restricciones.
+
 
 ## Pruebas
 
-```powershell
+```
 python -m unittest -v
 ```
 
-Hay 25 pruebas. Comprueban las propiedades de las funciones (concavidad, monotonía, submodularidad), comparan el voraz de reparto con una programación dinámica exacta en 300 instancias aleatorias, verifican la cota `1 − 1/e` frente a la fuerza bruta, validan la lectura de la entrada y ejecutan todos los casos de extremo a extremo.
+Debe terminar con `Ran 25 tests ... OK`. Las pruebas comprueban que:
+
+- las funciones de utilidad cumplen sus propiedades: concavidad, monotonía y submodularidad;
+- el voraz de reparto coincide con una programación dinámica exacta en 300 instancias aleatorias;
+- el voraz de selección respeta la cota `1 − 1/e` frente a la fuerza bruta;
+- la lectura de la entrada valida correctamente los datos;
+- todos los casos de la carpeta `casos` se resuelven de extremo a extremo.
+
 
 ## Validación experimental
 
-```powershell
-pip install matplotlib        # solo para las figuras (opcional)
-python experimentos.py        # tiempos vs. tamaño, optimalidad y razón de aproximación
+Instalar la dependencia opcional para las figuras:
+
+```
+pip install matplotlib
 ```
 
-Escribe `salidas/experimentos/*.csv` y `salidas/figuras/*.png` (semilla fija 2026).
+Medir los tiempos frente al tamaño y verificar la optimalidad y la razón de aproximación (semilla fija 2026). Genera `salidas\experimentos\*.csv` y `salidas\figuras\*.png`:
+
+```
+python experimentos.py
+```
+
+Calcular las pendientes log-log y los R² a partir de los CSV, sin volver a medir. Genera `salidas\experimentos\analisis_ajuste.csv`:
+
+```
+python analisis_experimentos.py
+```
+
+Para medir tiempos confiables, ejecute con el cargador conectado, en modo de energía «Máximo rendimiento» y con los demás programas cerrados.
+
 
 ## Generar casos sintéticos
 
-```powershell
-python generar_casos.py                                     # regenera los casos aleatorios propios
-python generar_casos.py --N 40 --k 5 --B 30 --T 3 --semilla 7 --salida casos\mi_caso.json
-```
-
-## Estructura
+Regenerar los casos aleatorios propios 04 y 05:
 
 ```
-main.py               punto de entrada (línea de comandos)
-generar_casos.py      generador de instancias con semilla fija
-experimentos.py       validación experimental (tiempos y garantías)
+python generar_casos.py
+```
+
+Crear un caso nuevo con los parámetros indicados:
+
+```
+python generar_casos.py --N 40 --k 5 --B 30 --T 3 --densidad 0.3 --semilla 7 --salida casos\mi_caso.json
+```
+
+Los casos propios 01 a 03 se escribieron a mano para probar situaciones específicas.
+
+
+## Estructura del proyecto
+
+```
+main.py                     punto de entrada de la solución base
+experimentos.py             validación experimental (tiempos y garantías)
+analisis_experimentos.py    cálculo de pendientes y R² a partir de los CSV
+generar_casos.py            generador de instancias con semilla fija
+requirements.txt            dependencias (solo matplotlib, opcional)
 solucion/
-  entrada.py          ÚNICO módulo que conoce el formato del JSON (si cambia la entrada, se edita solo este)
-  modelo.py           fórmulas de utilidad u_i(x) y f(S) (decisiones de modelado)
-  seleccion.py        Parte 2: voraz submodular + fuerza bruta (verificación)
-  reparto.py          Parte 1: voraz con montículo + programación dinámica (verificación)
-  rondas.py           orquestación de las T rondas y verificación de restricciones
-  salida.py           escritura de JSON, traza y tiempos
-casos/                entrada de la profesora + casos propios
-salidas/              resultados generados
-tests/                pruebas unitarias y de integración
-MANUAL_TECNICO.md     manual técnico
+    entrada.py              único módulo que conoce el formato del JSON
+    modelo.py               fórmulas de utilidad u_i(x) y f(S)
+    seleccion.py            Parte II: voraz submodular + fuerza bruta
+    reparto.py              Parte I: voraz con montículo + programación dinámica
+    rondas.py               orquestación de las T rondas y verificación
+    salida.py               escritura de JSON, traza y tiempos
+casos/                      entrada de la profesora + 5 casos propios
+tests/                      25 pruebas unitarias y de integración
+salidas/                    resultados generados al ejecutar
 ```
 
-Los detalles del algoritmo, los formatos, los supuestos y las limitaciones están en `MANUAL TECNICO.pdf`.
+
+## Estado del proyecto
+
+- **Solución base: completa.** Selección, reparto, T rondas con presupuesto por nodo, verificación, traza y experimentos.
+- **Variantes obligatorias: pendientes para la segunda entrega.** Son tres: costos de participación, fallas por ronda y nodos relacionados por grafo. Están formuladas y analizadas en el informe.
+
+
+## Autor
+
+Santiago Gil Marín  
+Análisis y Diseño de Algoritmos, 2026-B  
+Docente: Luz Enith Guerrero Mendieta
+
