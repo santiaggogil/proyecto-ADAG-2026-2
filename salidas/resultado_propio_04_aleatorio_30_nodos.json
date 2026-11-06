@@ -1,0 +1,1533 @@
+{
+  "caso": "propio_04_aleatorio_30_nodos",
+  "parametros": {
+    "N": 30,
+    "T": 3,
+    "k": 4,
+    "B": 30,
+    "presupuesto_costos": 19,
+    "aristas": 120
+  },
+  "modelo": {
+    "u_i(x)": "a_i * ln(1 + x)",
+    "f(S)": "sum_j a_j * (1 - prod_{i in S} (1 - p_ij)), p_jj = 1",
+    "grafo": "no dirigido"
+  },
+  "rondas": [
+    {
+      "ronda": 1,
+      "elegibles": [
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N06",
+        "N07",
+        "N08",
+        "N09",
+        "N10",
+        "N11",
+        "N12",
+        "N13",
+        "N14",
+        "N15",
+        "N16",
+        "N17",
+        "N18",
+        "N19",
+        "N20",
+        "N21",
+        "N22",
+        "N23",
+        "N24",
+        "N25",
+        "N26",
+        "N27",
+        "N28",
+        "N29",
+        "N30"
+      ],
+      "seleccion": [
+        "N14",
+        "N22",
+        "N30",
+        "N10"
+      ],
+      "utilidad_conjunta_f_S": 216.78408556800002,
+      "traza_seleccion": [
+        {
+          "paso": 1,
+          "ganancias_marginales": {
+            "N01": 45.102,
+            "N02": 51.265,
+            "N03": 34.101,
+            "N04": 43.446,
+            "N05": 54.213,
+            "N06": 56.347,
+            "N07": 50.277,
+            "N08": 62.186,
+            "N09": 25.421,
+            "N10": 56.535999999999994,
+            "N11": 39.101,
+            "N12": 49.947,
+            "N13": 62.972,
+            "N14": 82.06,
+            "N15": 75.008,
+            "N16": 26.571,
+            "N17": 41.339,
+            "N18": 56.516999999999996,
+            "N19": 67.725,
+            "N20": 53.129,
+            "N21": 58.828,
+            "N22": 72.312,
+            "N23": 53.503,
+            "N24": 45.961999999999996,
+            "N25": 63.186,
+            "N26": 61.906,
+            "N27": 58.892,
+            "N28": 37.204,
+            "N29": 55.102000000000004,
+            "N30": 80.077
+          },
+          "elegido": "N14",
+          "ganancia_elegida": 82.06,
+          "utilidad_acumulada": 82.06
+        },
+        {
+          "paso": 2,
+          "ganancias_marginales": {
+            "N01": 30.5323,
+            "N02": 42.01652,
+            "N03": 22.4261,
+            "N04": 25.66834,
+            "N05": 39.58039,
+            "N06": 28.13489,
+            "N07": 30.33838,
+            "N08": 45.70467,
+            "N09": 20.942239999999998,
+            "N10": 42.66744,
+            "N11": 37.33385,
+            "N12": 40.06686,
+            "N13": 45.688,
+            "N15": 55.0358,
+            "N16": 26.571,
+            "N17": 28.25972,
+            "N18": 43.684509999999996,
+            "N19": 51.537440000000004,
+            "N20": 32.876000000000005,
+            "N21": 44.1225,
+            "N22": 59.00256,
+            "N23": 52.54984,
+            "N24": 37.63809,
+            "N25": 44.2882,
+            "N26": 43.689,
+            "N27": 47.32745,
+            "N28": 32.9581,
+            "N29": 32.297160000000005,
+            "N30": 50.66904
+          },
+          "elegido": "N22",
+          "ganancia_elegida": 59.00256,
+          "utilidad_acumulada": 141.06256000000002
+        },
+        {
+          "paso": 3,
+          "ganancias_marginales": {
+            "N01": 22.96758,
+            "N02": 27.7913936,
+            "N03": 16.91118,
+            "N04": 20.23834,
+            "N05": 25.144873200000003,
+            "N06": 15.526062,
+            "N07": 24.15046,
+            "N08": 36.28913,
+            "N09": 20.942239999999998,
+            "N10": 38.0831872,
+            "N11": 30.747942000000002,
+            "N12": 26.3967168,
+            "N13": 33.51502,
+            "N15": 38.07014,
+            "N16": 22.5826,
+            "N17": 21.9850064,
+            "N18": 35.369490799999994,
+            "N19": 31.61025,
+            "N20": 28.49081,
+            "N21": 24.348142,
+            "N23": 30.00949,
+            "N24": 18.470718,
+            "N25": 34.15894,
+            "N26": 27.778620000000004,
+            "N27": 30.6632904,
+            "N28": 24.858468000000002,
+            "N29": 20.85328,
+            "N30": 40.0823632
+          },
+          "elegido": "N30",
+          "ganancia_elegida": 40.0823632,
+          "utilidad_acumulada": 181.14492320000002
+        },
+        {
+          "paso": 4,
+          "ganancias_marginales": {
+            "N01": 21.01038,
+            "N02": 24.7505264,
+            "N03": 6.805646399999999,
+            "N04": 17.54062,
+            "N05": 20.271335168,
+            "N06": 11.157820944,
+            "N07": 18.941879999999998,
+            "N08": 34.252638,
+            "N09": 9.646999999999998,
+            "N10": 35.639162368,
+            "N11": 27.915942,
+            "N12": 25.140344592,
+            "N13": 31.8045784,
+            "N15": 32.419064,
+            "N16": 22.5826,
+            "N17": 9.4495064,
+            "N18": 27.714306431999997,
+            "N19": 24.54273,
+            "N20": 24.06581,
+            "N21": 19.01914,
+            "N23": 24.7288996,
+            "N24": 16.601595696,
+            "N25": 26.9571328,
+            "N26": 19.616208,
+            "N27": 29.6093804,
+            "N28": 22.594721760000002,
+            "N29": 13.076944000000001
+          },
+          "elegido": "N10",
+          "ganancia_elegida": 35.639162368,
+          "utilidad_acumulada": 216.78408556800002
+        }
+      ],
+      "reparto": {
+        "N14": 7,
+        "N22": 7,
+        "N30": 8,
+        "N10": 8
+      },
+      "utilidad_reparto": 91.1206102521868,
+      "presupuesto_usado": 30,
+      "presupuesto_sobrante": 0,
+      "traza_reparto": [
+        {
+          "unidad": 1,
+          "nodo": "N30",
+          "ganancia_marginal": 8.109822012551358,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 8.109822012551358
+        },
+        {
+          "unidad": 2,
+          "nodo": "N10",
+          "ganancia_marginal": 8.040507294495365,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 16.150329307046725
+        },
+        {
+          "unidad": 3,
+          "nodo": "N14",
+          "ganancia_marginal": 6.792842369487464,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 22.943171676534188
+        },
+        {
+          "unidad": 4,
+          "nodo": "N22",
+          "ganancia_marginal": 6.515583497263486,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 29.458755173797673
+        },
+        {
+          "unidad": 5,
+          "nodo": "N30",
+          "ganancia_marginal": 4.743941764865523,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 34.202696938663195
+        },
+        {
+          "unidad": 6,
+          "nodo": "N10",
+          "ganancia_marginal": 4.703395254054707,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 38.9060921927179
+        },
+        {
+          "unidad": 7,
+          "nodo": "N14",
+          "ganancia_marginal": 3.9735580594600113,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 42.87965025217791
+        },
+        {
+          "unidad": 8,
+          "nodo": "N22",
+          "ganancia_marginal": 3.8113720162167453,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 46.691022268394654
+        },
+        {
+          "unidad": 9,
+          "nodo": "N30",
+          "ganancia_marginal": 3.3658802476858365,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 50.05690251608049
+        },
+        {
+          "unidad": 10,
+          "nodo": "N10",
+          "ganancia_marginal": 3.3371120404406582,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 53.39401455652115
+        },
+        {
+          "unidad": 11,
+          "nodo": "N14",
+          "ganancia_marginal": 2.819284310027453,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 56.213298866548605
+        },
+        {
+          "unidad": 12,
+          "nodo": "N22",
+          "ganancia_marginal": 2.7042114810467406,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 58.917510347595346
+        },
+        {
+          "unidad": 13,
+          "nodo": "N30",
+          "ganancia_marginal": 2.6107795503762543,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 61.528289897971604
+        },
+        {
+          "unidad": 14,
+          "nodo": "N10",
+          "ganancia_marginal": 2.588465195244833,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 64.11675509321644
+        },
+        {
+          "unidad": 15,
+          "nodo": "N14",
+          "ganancia_marginal": 2.1868068028792558,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 66.3035618960957
+        },
+        {
+          "unidad": 16,
+          "nodo": "N30",
+          "ganancia_marginal": 2.1331622144892695,
+          "unidades_del_nodo": 5,
+          "utilidad_acumulada": 68.43672411058498
+        },
+        {
+          "unidad": 17,
+          "nodo": "N10",
+          "ganancia_marginal": 2.114930058809874,
+          "unidades_del_nodo": 5,
+          "utilidad_acumulada": 70.55165416939485
+        },
+        {
+          "unidad": 18,
+          "nodo": "N22",
+          "ganancia_marginal": 2.097549382353572,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 72.64920355174843
+        },
+        {
+          "unidad": 19,
+          "nodo": "N30",
+          "ganancia_marginal": 1.8035629539789217,
+          "unidades_del_nodo": 6,
+          "utilidad_acumulada": 74.45276650572735
+        },
+        {
+          "unidad": 20,
+          "nodo": "N10",
+          "ganancia_marginal": 1.788147885996196,
+          "unidades_del_nodo": 6,
+          "utilidad_acumulada": 76.24091439172355
+        },
+        {
+          "unidad": 21,
+          "nodo": "N14",
+          "ganancia_marginal": 1.7867512565807557,
+          "unidades_del_nodo": 5,
+          "utilidad_acumulada": 78.0276656483043
+        },
+        {
+          "unidad": 22,
+          "nodo": "N22",
+          "ganancia_marginal": 1.7138226338631737,
+          "unidades_del_nodo": 5,
+          "utilidad_acumulada": 79.74148828216748
+        },
+        {
+          "unidad": 23,
+          "nodo": "N30",
+          "ganancia_marginal": 1.5623172937069147,
+          "unidades_del_nodo": 7,
+          "utilidad_acumulada": 81.30380557587439
+        },
+        {
+          "unidad": 24,
+          "nodo": "N10",
+          "ganancia_marginal": 1.5489641544444623,
+          "unidades_del_nodo": 7,
+          "utilidad_acumulada": 82.85276973031885
+        },
+        {
+          "unidad": 25,
+          "nodo": "N14",
+          "ganancia_marginal": 1.5106766623071313,
+          "unidades_del_nodo": 6,
+          "utilidad_acumulada": 84.36344639262599
+        },
+        {
+          "unidad": 26,
+          "nodo": "N22",
+          "ganancia_marginal": 1.4490163903762279,
+          "unidades_del_nodo": 6,
+          "utilidad_acumulada": 85.81246278300222
+        },
+        {
+          "unidad": 27,
+          "nodo": "N30",
+          "ganancia_marginal": 1.3780615171796864,
+          "unidades_del_nodo": 8,
+          "utilidad_acumulada": 87.1905243001819
+        },
+        {
+          "unidad": 28,
+          "nodo": "N10",
+          "ganancia_marginal": 1.3662832136140481,
+          "unidades_del_nodo": 8,
+          "utilidad_acumulada": 88.55680751379596
+        },
+        {
+          "unidad": 29,
+          "nodo": "N14",
+          "ganancia_marginal": 1.308607647720322,
+          "unidades_del_nodo": 7,
+          "utilidad_acumulada": 89.86541516151628
+        },
+        {
+          "unidad": 30,
+          "nodo": "N22",
+          "ganancia_marginal": 1.2551950906705127,
+          "unidades_del_nodo": 7,
+          "utilidad_acumulada": 91.1206102521868
+        }
+      ],
+      "costo_participacion": 18,
+      "presupuesto_restante_despues": {
+        "N14": 16,
+        "N22": 16,
+        "N30": 15,
+        "N10": 15
+      },
+      "tiempo_ms": {
+        "seleccion": 0.233299999990777,
+        "reparto": 0.013800000033370452
+      },
+      "verificacion": [
+        {
+          "restriccion": "|S| = k",
+          "cumple": true,
+          "detalle": "|S| = 4, k = 4, elegibles = 30",
+          "informativa": false
+        },
+        {
+          "restriccion": "S sin repetidos y solo con nodos elegibles",
+          "cumple": true,
+          "detalle": "S = ['N14', 'N22', 'N30', 'N10']",
+          "informativa": false
+        },
+        {
+          "restriccion": "Σ x_i <= B",
+          "cumple": true,
+          "detalle": "Σ x_i = 30, B = 30",
+          "informativa": false
+        },
+        {
+          "restriccion": "x_i enteros y 0 <= x_i <= presupuesto restante del nodo",
+          "cumple": true,
+          "detalle": "N14: 7 <= 23; N22: 7 <= 23; N30: 8 <= 23; N10: 8 <= 23",
+          "informativa": false
+        },
+        {
+          "restriccion": "u_i creciente y cóncava (ganancias marginales >= 0 y no crecientes)",
+          "cumple": true,
+          "detalle": "revisado para cada nodo seleccionado hasta su tope",
+          "informativa": false
+        },
+        {
+          "restriccion": "Costo de participación <= presupuesto de costos (variante 1, no impuesta en la base)",
+          "cumple": true,
+          "detalle": "costo = 18, presupuesto = 19",
+          "informativa": true
+        },
+        {
+          "restriccion": "f(S_voraz) >= (1 - 1/e)·OPT",
+          "cumple": true,
+          "detalle": "razón = 0.966788 >= 0.632121",
+          "informativa": false
+        },
+        {
+          "restriccion": "Reparto voraz = óptimo por programación dinámica",
+          "cumple": true,
+          "detalle": "voraz = 91.120610, DP = 91.120610",
+          "informativa": false
+        }
+      ],
+      "comparacion_con_optimo": {
+        "seleccion": {
+          "subconjuntos_revisados": 27405,
+          "S_optimo": [
+            "N10",
+            "N15",
+            "N19",
+            "N30"
+          ],
+          "f_optimo": 224.23124639999995,
+          "f_voraz": 216.78408556800002,
+          "razon": 0.9667880326601979,
+          "cota_1_menos_1_e": 0.6321205588285577
+        },
+        "reparto": {
+          "utilidad_dp": 91.12061025218676,
+          "utilidad_voraz": 91.1206102521868
+        }
+      }
+    },
+    {
+      "ronda": 2,
+      "elegibles": [
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N06",
+        "N07",
+        "N08",
+        "N09",
+        "N10",
+        "N11",
+        "N12",
+        "N13",
+        "N14",
+        "N15",
+        "N16",
+        "N17",
+        "N18",
+        "N19",
+        "N20",
+        "N21",
+        "N22",
+        "N23",
+        "N24",
+        "N25",
+        "N26",
+        "N27",
+        "N28",
+        "N29",
+        "N30"
+      ],
+      "seleccion": [
+        "N14",
+        "N22",
+        "N30",
+        "N10"
+      ],
+      "utilidad_conjunta_f_S": 216.78408556800002,
+      "traza_seleccion": [
+        {
+          "paso": 1,
+          "ganancias_marginales": {
+            "N01": 45.102,
+            "N02": 51.265,
+            "N03": 34.101,
+            "N04": 43.446,
+            "N05": 54.213,
+            "N06": 56.347,
+            "N07": 50.277,
+            "N08": 62.186,
+            "N09": 25.421,
+            "N10": 56.535999999999994,
+            "N11": 39.101,
+            "N12": 49.947,
+            "N13": 62.972,
+            "N14": 82.06,
+            "N15": 75.008,
+            "N16": 26.571,
+            "N17": 41.339,
+            "N18": 56.516999999999996,
+            "N19": 67.725,
+            "N20": 53.129,
+            "N21": 58.828,
+            "N22": 72.312,
+            "N23": 53.503,
+            "N24": 45.961999999999996,
+            "N25": 63.186,
+            "N26": 61.906,
+            "N27": 58.892,
+            "N28": 37.204,
+            "N29": 55.102000000000004,
+            "N30": 80.077
+          },
+          "elegido": "N14",
+          "ganancia_elegida": 82.06,
+          "utilidad_acumulada": 82.06
+        },
+        {
+          "paso": 2,
+          "ganancias_marginales": {
+            "N01": 30.5323,
+            "N02": 42.01652,
+            "N03": 22.4261,
+            "N04": 25.66834,
+            "N05": 39.58039,
+            "N06": 28.13489,
+            "N07": 30.33838,
+            "N08": 45.70467,
+            "N09": 20.942239999999998,
+            "N10": 42.66744,
+            "N11": 37.33385,
+            "N12": 40.06686,
+            "N13": 45.688,
+            "N15": 55.0358,
+            "N16": 26.571,
+            "N17": 28.25972,
+            "N18": 43.684509999999996,
+            "N19": 51.537440000000004,
+            "N20": 32.876000000000005,
+            "N21": 44.1225,
+            "N22": 59.00256,
+            "N23": 52.54984,
+            "N24": 37.63809,
+            "N25": 44.2882,
+            "N26": 43.689,
+            "N27": 47.32745,
+            "N28": 32.9581,
+            "N29": 32.297160000000005,
+            "N30": 50.66904
+          },
+          "elegido": "N22",
+          "ganancia_elegida": 59.00256,
+          "utilidad_acumulada": 141.06256000000002
+        },
+        {
+          "paso": 3,
+          "ganancias_marginales": {
+            "N01": 22.96758,
+            "N02": 27.7913936,
+            "N03": 16.91118,
+            "N04": 20.23834,
+            "N05": 25.144873200000003,
+            "N06": 15.526062,
+            "N07": 24.15046,
+            "N08": 36.28913,
+            "N09": 20.942239999999998,
+            "N10": 38.0831872,
+            "N11": 30.747942000000002,
+            "N12": 26.3967168,
+            "N13": 33.51502,
+            "N15": 38.07014,
+            "N16": 22.5826,
+            "N17": 21.9850064,
+            "N18": 35.369490799999994,
+            "N19": 31.61025,
+            "N20": 28.49081,
+            "N21": 24.348142,
+            "N23": 30.00949,
+            "N24": 18.470718,
+            "N25": 34.15894,
+            "N26": 27.778620000000004,
+            "N27": 30.6632904,
+            "N28": 24.858468000000002,
+            "N29": 20.85328,
+            "N30": 40.0823632
+          },
+          "elegido": "N30",
+          "ganancia_elegida": 40.0823632,
+          "utilidad_acumulada": 181.14492320000002
+        },
+        {
+          "paso": 4,
+          "ganancias_marginales": {
+            "N01": 21.01038,
+            "N02": 24.7505264,
+            "N03": 6.805646399999999,
+            "N04": 17.54062,
+            "N05": 20.271335168,
+            "N06": 11.157820944,
+            "N07": 18.941879999999998,
+            "N08": 34.252638,
+            "N09": 9.646999999999998,
+            "N10": 35.639162368,
+            "N11": 27.915942,
+            "N12": 25.140344592,
+            "N13": 31.8045784,
+            "N15": 32.419064,
+            "N16": 22.5826,
+            "N17": 9.4495064,
+            "N18": 27.714306431999997,
+            "N19": 24.54273,
+            "N20": 24.06581,
+            "N21": 19.01914,
+            "N23": 24.7288996,
+            "N24": 16.601595696,
+            "N25": 26.9571328,
+            "N26": 19.616208,
+            "N27": 29.6093804,
+            "N28": 22.594721760000002,
+            "N29": 13.076944000000001
+          },
+          "elegido": "N10",
+          "ganancia_elegida": 35.639162368,
+          "utilidad_acumulada": 216.78408556800002
+        }
+      ],
+      "reparto": {
+        "N14": 7,
+        "N22": 7,
+        "N30": 8,
+        "N10": 8
+      },
+      "utilidad_reparto": 91.1206102521868,
+      "presupuesto_usado": 30,
+      "presupuesto_sobrante": 0,
+      "traza_reparto": [
+        {
+          "unidad": 1,
+          "nodo": "N30",
+          "ganancia_marginal": 8.109822012551358,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 8.109822012551358
+        },
+        {
+          "unidad": 2,
+          "nodo": "N10",
+          "ganancia_marginal": 8.040507294495365,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 16.150329307046725
+        },
+        {
+          "unidad": 3,
+          "nodo": "N14",
+          "ganancia_marginal": 6.792842369487464,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 22.943171676534188
+        },
+        {
+          "unidad": 4,
+          "nodo": "N22",
+          "ganancia_marginal": 6.515583497263486,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 29.458755173797673
+        },
+        {
+          "unidad": 5,
+          "nodo": "N30",
+          "ganancia_marginal": 4.743941764865523,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 34.202696938663195
+        },
+        {
+          "unidad": 6,
+          "nodo": "N10",
+          "ganancia_marginal": 4.703395254054707,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 38.9060921927179
+        },
+        {
+          "unidad": 7,
+          "nodo": "N14",
+          "ganancia_marginal": 3.9735580594600113,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 42.87965025217791
+        },
+        {
+          "unidad": 8,
+          "nodo": "N22",
+          "ganancia_marginal": 3.8113720162167453,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 46.691022268394654
+        },
+        {
+          "unidad": 9,
+          "nodo": "N30",
+          "ganancia_marginal": 3.3658802476858365,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 50.05690251608049
+        },
+        {
+          "unidad": 10,
+          "nodo": "N10",
+          "ganancia_marginal": 3.3371120404406582,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 53.39401455652115
+        },
+        {
+          "unidad": 11,
+          "nodo": "N14",
+          "ganancia_marginal": 2.819284310027453,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 56.213298866548605
+        },
+        {
+          "unidad": 12,
+          "nodo": "N22",
+          "ganancia_marginal": 2.7042114810467406,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 58.917510347595346
+        },
+        {
+          "unidad": 13,
+          "nodo": "N30",
+          "ganancia_marginal": 2.6107795503762543,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 61.528289897971604
+        },
+        {
+          "unidad": 14,
+          "nodo": "N10",
+          "ganancia_marginal": 2.588465195244833,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 64.11675509321644
+        },
+        {
+          "unidad": 15,
+          "nodo": "N14",
+          "ganancia_marginal": 2.1868068028792558,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 66.3035618960957
+        },
+        {
+          "unidad": 16,
+          "nodo": "N30",
+          "ganancia_marginal": 2.1331622144892695,
+          "unidades_del_nodo": 5,
+          "utilidad_acumulada": 68.43672411058498
+        },
+        {
+          "unidad": 17,
+          "nodo": "N10",
+          "ganancia_marginal": 2.114930058809874,
+          "unidades_del_nodo": 5,
+          "utilidad_acumulada": 70.55165416939485
+        },
+        {
+          "unidad": 18,
+          "nodo": "N22",
+          "ganancia_marginal": 2.097549382353572,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 72.64920355174843
+        },
+        {
+          "unidad": 19,
+          "nodo": "N30",
+          "ganancia_marginal": 1.8035629539789217,
+          "unidades_del_nodo": 6,
+          "utilidad_acumulada": 74.45276650572735
+        },
+        {
+          "unidad": 20,
+          "nodo": "N10",
+          "ganancia_marginal": 1.788147885996196,
+          "unidades_del_nodo": 6,
+          "utilidad_acumulada": 76.24091439172355
+        },
+        {
+          "unidad": 21,
+          "nodo": "N14",
+          "ganancia_marginal": 1.7867512565807557,
+          "unidades_del_nodo": 5,
+          "utilidad_acumulada": 78.0276656483043
+        },
+        {
+          "unidad": 22,
+          "nodo": "N22",
+          "ganancia_marginal": 1.7138226338631737,
+          "unidades_del_nodo": 5,
+          "utilidad_acumulada": 79.74148828216748
+        },
+        {
+          "unidad": 23,
+          "nodo": "N30",
+          "ganancia_marginal": 1.5623172937069147,
+          "unidades_del_nodo": 7,
+          "utilidad_acumulada": 81.30380557587439
+        },
+        {
+          "unidad": 24,
+          "nodo": "N10",
+          "ganancia_marginal": 1.5489641544444623,
+          "unidades_del_nodo": 7,
+          "utilidad_acumulada": 82.85276973031885
+        },
+        {
+          "unidad": 25,
+          "nodo": "N14",
+          "ganancia_marginal": 1.5106766623071313,
+          "unidades_del_nodo": 6,
+          "utilidad_acumulada": 84.36344639262599
+        },
+        {
+          "unidad": 26,
+          "nodo": "N22",
+          "ganancia_marginal": 1.4490163903762279,
+          "unidades_del_nodo": 6,
+          "utilidad_acumulada": 85.81246278300222
+        },
+        {
+          "unidad": 27,
+          "nodo": "N30",
+          "ganancia_marginal": 1.3780615171796864,
+          "unidades_del_nodo": 8,
+          "utilidad_acumulada": 87.1905243001819
+        },
+        {
+          "unidad": 28,
+          "nodo": "N10",
+          "ganancia_marginal": 1.3662832136140481,
+          "unidades_del_nodo": 8,
+          "utilidad_acumulada": 88.55680751379596
+        },
+        {
+          "unidad": 29,
+          "nodo": "N14",
+          "ganancia_marginal": 1.308607647720322,
+          "unidades_del_nodo": 7,
+          "utilidad_acumulada": 89.86541516151628
+        },
+        {
+          "unidad": 30,
+          "nodo": "N22",
+          "ganancia_marginal": 1.2551950906705127,
+          "unidades_del_nodo": 7,
+          "utilidad_acumulada": 91.1206102521868
+        }
+      ],
+      "costo_participacion": 18,
+      "presupuesto_restante_despues": {
+        "N14": 9,
+        "N22": 9,
+        "N30": 7,
+        "N10": 7
+      },
+      "tiempo_ms": {
+        "seleccion": 0.23320000013882236,
+        "reparto": 0.013800000033370452
+      },
+      "verificacion": [
+        {
+          "restriccion": "|S| = k",
+          "cumple": true,
+          "detalle": "|S| = 4, k = 4, elegibles = 30",
+          "informativa": false
+        },
+        {
+          "restriccion": "S sin repetidos y solo con nodos elegibles",
+          "cumple": true,
+          "detalle": "S = ['N14', 'N22', 'N30', 'N10']",
+          "informativa": false
+        },
+        {
+          "restriccion": "Σ x_i <= B",
+          "cumple": true,
+          "detalle": "Σ x_i = 30, B = 30",
+          "informativa": false
+        },
+        {
+          "restriccion": "x_i enteros y 0 <= x_i <= presupuesto restante del nodo",
+          "cumple": true,
+          "detalle": "N14: 7 <= 16; N22: 7 <= 16; N30: 8 <= 15; N10: 8 <= 15",
+          "informativa": false
+        },
+        {
+          "restriccion": "u_i creciente y cóncava (ganancias marginales >= 0 y no crecientes)",
+          "cumple": true,
+          "detalle": "revisado para cada nodo seleccionado hasta su tope",
+          "informativa": false
+        },
+        {
+          "restriccion": "Costo de participación <= presupuesto de costos (variante 1, no impuesta en la base)",
+          "cumple": true,
+          "detalle": "costo = 18, presupuesto = 19",
+          "informativa": true
+        },
+        {
+          "restriccion": "f(S_voraz) >= (1 - 1/e)·OPT",
+          "cumple": true,
+          "detalle": "razón = 0.966788 >= 0.632121",
+          "informativa": false
+        },
+        {
+          "restriccion": "Reparto voraz = óptimo por programación dinámica",
+          "cumple": true,
+          "detalle": "voraz = 91.120610, DP = 91.120610",
+          "informativa": false
+        }
+      ],
+      "comparacion_con_optimo": {
+        "seleccion": {
+          "subconjuntos_revisados": 27405,
+          "S_optimo": [
+            "N10",
+            "N15",
+            "N19",
+            "N30"
+          ],
+          "f_optimo": 224.23124639999995,
+          "f_voraz": 216.78408556800002,
+          "razon": 0.9667880326601979,
+          "cota_1_menos_1_e": 0.6321205588285577
+        },
+        "reparto": {
+          "utilidad_dp": 91.12061025218676,
+          "utilidad_voraz": 91.1206102521868
+        }
+      }
+    },
+    {
+      "ronda": 3,
+      "elegibles": [
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N05",
+        "N06",
+        "N07",
+        "N08",
+        "N09",
+        "N10",
+        "N11",
+        "N12",
+        "N13",
+        "N14",
+        "N15",
+        "N16",
+        "N17",
+        "N18",
+        "N19",
+        "N20",
+        "N21",
+        "N22",
+        "N23",
+        "N24",
+        "N25",
+        "N26",
+        "N27",
+        "N28",
+        "N29",
+        "N30"
+      ],
+      "seleccion": [
+        "N14",
+        "N22",
+        "N30",
+        "N10"
+      ],
+      "utilidad_conjunta_f_S": 216.78408556800002,
+      "traza_seleccion": [
+        {
+          "paso": 1,
+          "ganancias_marginales": {
+            "N01": 45.102,
+            "N02": 51.265,
+            "N03": 34.101,
+            "N04": 43.446,
+            "N05": 54.213,
+            "N06": 56.347,
+            "N07": 50.277,
+            "N08": 62.186,
+            "N09": 25.421,
+            "N10": 56.535999999999994,
+            "N11": 39.101,
+            "N12": 49.947,
+            "N13": 62.972,
+            "N14": 82.06,
+            "N15": 75.008,
+            "N16": 26.571,
+            "N17": 41.339,
+            "N18": 56.516999999999996,
+            "N19": 67.725,
+            "N20": 53.129,
+            "N21": 58.828,
+            "N22": 72.312,
+            "N23": 53.503,
+            "N24": 45.961999999999996,
+            "N25": 63.186,
+            "N26": 61.906,
+            "N27": 58.892,
+            "N28": 37.204,
+            "N29": 55.102000000000004,
+            "N30": 80.077
+          },
+          "elegido": "N14",
+          "ganancia_elegida": 82.06,
+          "utilidad_acumulada": 82.06
+        },
+        {
+          "paso": 2,
+          "ganancias_marginales": {
+            "N01": 30.5323,
+            "N02": 42.01652,
+            "N03": 22.4261,
+            "N04": 25.66834,
+            "N05": 39.58039,
+            "N06": 28.13489,
+            "N07": 30.33838,
+            "N08": 45.70467,
+            "N09": 20.942239999999998,
+            "N10": 42.66744,
+            "N11": 37.33385,
+            "N12": 40.06686,
+            "N13": 45.688,
+            "N15": 55.0358,
+            "N16": 26.571,
+            "N17": 28.25972,
+            "N18": 43.684509999999996,
+            "N19": 51.537440000000004,
+            "N20": 32.876000000000005,
+            "N21": 44.1225,
+            "N22": 59.00256,
+            "N23": 52.54984,
+            "N24": 37.63809,
+            "N25": 44.2882,
+            "N26": 43.689,
+            "N27": 47.32745,
+            "N28": 32.9581,
+            "N29": 32.297160000000005,
+            "N30": 50.66904
+          },
+          "elegido": "N22",
+          "ganancia_elegida": 59.00256,
+          "utilidad_acumulada": 141.06256000000002
+        },
+        {
+          "paso": 3,
+          "ganancias_marginales": {
+            "N01": 22.96758,
+            "N02": 27.7913936,
+            "N03": 16.91118,
+            "N04": 20.23834,
+            "N05": 25.144873200000003,
+            "N06": 15.526062,
+            "N07": 24.15046,
+            "N08": 36.28913,
+            "N09": 20.942239999999998,
+            "N10": 38.0831872,
+            "N11": 30.747942000000002,
+            "N12": 26.3967168,
+            "N13": 33.51502,
+            "N15": 38.07014,
+            "N16": 22.5826,
+            "N17": 21.9850064,
+            "N18": 35.369490799999994,
+            "N19": 31.61025,
+            "N20": 28.49081,
+            "N21": 24.348142,
+            "N23": 30.00949,
+            "N24": 18.470718,
+            "N25": 34.15894,
+            "N26": 27.778620000000004,
+            "N27": 30.6632904,
+            "N28": 24.858468000000002,
+            "N29": 20.85328,
+            "N30": 40.0823632
+          },
+          "elegido": "N30",
+          "ganancia_elegida": 40.0823632,
+          "utilidad_acumulada": 181.14492320000002
+        },
+        {
+          "paso": 4,
+          "ganancias_marginales": {
+            "N01": 21.01038,
+            "N02": 24.7505264,
+            "N03": 6.805646399999999,
+            "N04": 17.54062,
+            "N05": 20.271335168,
+            "N06": 11.157820944,
+            "N07": 18.941879999999998,
+            "N08": 34.252638,
+            "N09": 9.646999999999998,
+            "N10": 35.639162368,
+            "N11": 27.915942,
+            "N12": 25.140344592,
+            "N13": 31.8045784,
+            "N15": 32.419064,
+            "N16": 22.5826,
+            "N17": 9.4495064,
+            "N18": 27.714306431999997,
+            "N19": 24.54273,
+            "N20": 24.06581,
+            "N21": 19.01914,
+            "N23": 24.7288996,
+            "N24": 16.601595696,
+            "N25": 26.9571328,
+            "N26": 19.616208,
+            "N27": 29.6093804,
+            "N28": 22.594721760000002,
+            "N29": 13.076944000000001
+          },
+          "elegido": "N10",
+          "ganancia_elegida": 35.639162368,
+          "utilidad_acumulada": 216.78408556800002
+        }
+      ],
+      "reparto": {
+        "N14": 8,
+        "N22": 8,
+        "N30": 7,
+        "N10": 7
+      },
+      "utilidad_reparto": 90.63769980599562,
+      "presupuesto_usado": 30,
+      "presupuesto_sobrante": 0,
+      "traza_reparto": [
+        {
+          "unidad": 1,
+          "nodo": "N30",
+          "ganancia_marginal": 8.109822012551358,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 8.109822012551358
+        },
+        {
+          "unidad": 2,
+          "nodo": "N10",
+          "ganancia_marginal": 8.040507294495365,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 16.150329307046725
+        },
+        {
+          "unidad": 3,
+          "nodo": "N14",
+          "ganancia_marginal": 6.792842369487464,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 22.943171676534188
+        },
+        {
+          "unidad": 4,
+          "nodo": "N22",
+          "ganancia_marginal": 6.515583497263486,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 29.458755173797673
+        },
+        {
+          "unidad": 5,
+          "nodo": "N30",
+          "ganancia_marginal": 4.743941764865523,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 34.202696938663195
+        },
+        {
+          "unidad": 6,
+          "nodo": "N10",
+          "ganancia_marginal": 4.703395254054707,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 38.9060921927179
+        },
+        {
+          "unidad": 7,
+          "nodo": "N14",
+          "ganancia_marginal": 3.9735580594600113,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 42.87965025217791
+        },
+        {
+          "unidad": 8,
+          "nodo": "N22",
+          "ganancia_marginal": 3.8113720162167453,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 46.691022268394654
+        },
+        {
+          "unidad": 9,
+          "nodo": "N30",
+          "ganancia_marginal": 3.3658802476858365,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 50.05690251608049
+        },
+        {
+          "unidad": 10,
+          "nodo": "N10",
+          "ganancia_marginal": 3.3371120404406582,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 53.39401455652115
+        },
+        {
+          "unidad": 11,
+          "nodo": "N14",
+          "ganancia_marginal": 2.819284310027453,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 56.213298866548605
+        },
+        {
+          "unidad": 12,
+          "nodo": "N22",
+          "ganancia_marginal": 2.7042114810467406,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 58.917510347595346
+        },
+        {
+          "unidad": 13,
+          "nodo": "N30",
+          "ganancia_marginal": 2.6107795503762543,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 61.528289897971604
+        },
+        {
+          "unidad": 14,
+          "nodo": "N10",
+          "ganancia_marginal": 2.588465195244833,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 64.11675509321644
+        },
+        {
+          "unidad": 15,
+          "nodo": "N14",
+          "ganancia_marginal": 2.1868068028792558,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 66.3035618960957
+        },
+        {
+          "unidad": 16,
+          "nodo": "N30",
+          "ganancia_marginal": 2.1331622144892695,
+          "unidades_del_nodo": 5,
+          "utilidad_acumulada": 68.43672411058498
+        },
+        {
+          "unidad": 17,
+          "nodo": "N10",
+          "ganancia_marginal": 2.114930058809874,
+          "unidades_del_nodo": 5,
+          "utilidad_acumulada": 70.55165416939485
+        },
+        {
+          "unidad": 18,
+          "nodo": "N22",
+          "ganancia_marginal": 2.097549382353572,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 72.64920355174843
+        },
+        {
+          "unidad": 19,
+          "nodo": "N30",
+          "ganancia_marginal": 1.8035629539789217,
+          "unidades_del_nodo": 6,
+          "utilidad_acumulada": 74.45276650572735
+        },
+        {
+          "unidad": 20,
+          "nodo": "N10",
+          "ganancia_marginal": 1.788147885996196,
+          "unidades_del_nodo": 6,
+          "utilidad_acumulada": 76.24091439172355
+        },
+        {
+          "unidad": 21,
+          "nodo": "N14",
+          "ganancia_marginal": 1.7867512565807557,
+          "unidades_del_nodo": 5,
+          "utilidad_acumulada": 78.0276656483043
+        },
+        {
+          "unidad": 22,
+          "nodo": "N22",
+          "ganancia_marginal": 1.7138226338631737,
+          "unidades_del_nodo": 5,
+          "utilidad_acumulada": 79.74148828216748
+        },
+        {
+          "unidad": 23,
+          "nodo": "N30",
+          "ganancia_marginal": 1.5623172937069147,
+          "unidades_del_nodo": 7,
+          "utilidad_acumulada": 81.30380557587439
+        },
+        {
+          "unidad": 24,
+          "nodo": "N10",
+          "ganancia_marginal": 1.5489641544444623,
+          "unidades_del_nodo": 7,
+          "utilidad_acumulada": 82.85276973031885
+        },
+        {
+          "unidad": 25,
+          "nodo": "N14",
+          "ganancia_marginal": 1.5106766623071313,
+          "unidades_del_nodo": 6,
+          "utilidad_acumulada": 84.36344639262599
+        },
+        {
+          "unidad": 26,
+          "nodo": "N22",
+          "ganancia_marginal": 1.4490163903762279,
+          "unidades_del_nodo": 6,
+          "utilidad_acumulada": 85.81246278300222
+        },
+        {
+          "unidad": 27,
+          "nodo": "N14",
+          "ganancia_marginal": 1.308607647720322,
+          "unidades_del_nodo": 7,
+          "utilidad_acumulada": 87.12107043072254
+        },
+        {
+          "unidad": 28,
+          "nodo": "N22",
+          "ganancia_marginal": 1.2551950906705127,
+          "unidades_del_nodo": 7,
+          "utilidad_acumulada": 88.37626552139305
+        },
+        {
+          "unidad": 29,
+          "nodo": "N14",
+          "ganancia_marginal": 1.154273749432558,
+          "unidades_del_nodo": 8,
+          "utilidad_acumulada": 89.53053927082561
+        },
+        {
+          "unidad": 30,
+          "nodo": "N22",
+          "ganancia_marginal": 1.1071605351700045,
+          "unidades_del_nodo": 8,
+          "utilidad_acumulada": 90.63769980599562
+        }
+      ],
+      "costo_participacion": 18,
+      "presupuesto_restante_despues": {
+        "N14": 1,
+        "N22": 1,
+        "N30": 0,
+        "N10": 0
+      },
+      "tiempo_ms": {
+        "seleccion": 0.23250000003827154,
+        "reparto": 0.013600000102087506
+      },
+      "verificacion": [
+        {
+          "restriccion": "|S| = k",
+          "cumple": true,
+          "detalle": "|S| = 4, k = 4, elegibles = 30",
+          "informativa": false
+        },
+        {
+          "restriccion": "S sin repetidos y solo con nodos elegibles",
+          "cumple": true,
+          "detalle": "S = ['N14', 'N22', 'N30', 'N10']",
+          "informativa": false
+        },
+        {
+          "restriccion": "Σ x_i <= B",
+          "cumple": true,
+          "detalle": "Σ x_i = 30, B = 30",
+          "informativa": false
+        },
+        {
+          "restriccion": "x_i enteros y 0 <= x_i <= presupuesto restante del nodo",
+          "cumple": true,
+          "detalle": "N14: 8 <= 9; N22: 8 <= 9; N30: 7 <= 7; N10: 7 <= 7",
+          "informativa": false
+        },
+        {
+          "restriccion": "u_i creciente y cóncava (ganancias marginales >= 0 y no crecientes)",
+          "cumple": true,
+          "detalle": "revisado para cada nodo seleccionado hasta su tope",
+          "informativa": false
+        },
+        {
+          "restriccion": "Costo de participación <= presupuesto de costos (variante 1, no impuesta en la base)",
+          "cumple": true,
+          "detalle": "costo = 18, presupuesto = 19",
+          "informativa": true
+        },
+        {
+          "restriccion": "f(S_voraz) >= (1 - 1/e)·OPT",
+          "cumple": true,
+          "detalle": "razón = 0.966788 >= 0.632121",
+          "informativa": false
+        },
+        {
+          "restriccion": "Reparto voraz = óptimo por programación dinámica",
+          "cumple": true,
+          "detalle": "voraz = 90.637700, DP = 90.637700",
+          "informativa": false
+        }
+      ],
+      "comparacion_con_optimo": {
+        "seleccion": {
+          "subconjuntos_revisados": 27405,
+          "S_optimo": [
+            "N10",
+            "N15",
+            "N19",
+            "N30"
+          ],
+          "f_optimo": 224.23124639999995,
+          "f_voraz": 216.78408556800002,
+          "razon": 0.9667880326601979,
+          "cota_1_menos_1_e": 0.6321205588285577
+        },
+        "reparto": {
+          "utilidad_dp": 90.63769980599558,
+          "utilidad_voraz": 90.63769980599562
+        }
+      }
+    }
+  ],
+  "gasto_total_por_nodo": {
+    "N01": 0,
+    "N02": 0,
+    "N03": 0,
+    "N04": 0,
+    "N05": 0,
+    "N06": 0,
+    "N07": 0,
+    "N08": 0,
+    "N09": 0,
+    "N10": 23,
+    "N11": 0,
+    "N12": 0,
+    "N13": 0,
+    "N14": 22,
+    "N15": 0,
+    "N16": 0,
+    "N17": 0,
+    "N18": 0,
+    "N19": 0,
+    "N20": 0,
+    "N21": 0,
+    "N22": 22,
+    "N23": 0,
+    "N24": 0,
+    "N25": 0,
+    "N26": 0,
+    "N27": 0,
+    "N28": 0,
+    "N29": 0,
+    "N30": 23
+  },
+  "topes_por_nodo_respetados": true,
+  "utilidad_conjunta_total": 650.3522567040001,
+  "utilidad_reparto_total": 272.8789203103692,
+  "tiempo_algoritmo_ms": {
+    "mediana": 0.7822000000032858,
+    "minimo": 0.7510000000365835,
+    "repeticiones": 5
+  },
+  "tiempo_verificacion_ms": 428.0729000001884,
+  "todas_las_restricciones_cumplen": true
+}

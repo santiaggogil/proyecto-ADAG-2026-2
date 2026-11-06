@@ -1,0 +1,489 @@
+{
+  "caso": "propio_03_topes_agotados_5_nodos",
+  "parametros": {
+    "N": 5,
+    "T": 3,
+    "k": 3,
+    "B": 10,
+    "presupuesto_costos": 12,
+    "aristas": 5
+  },
+  "modelo": {
+    "u_i(x)": "a_i * ln(1 + x)",
+    "f(S)": "sum_j a_j * (1 - prod_{i in S} (1 - p_ij)), p_jj = 1",
+    "grafo": "no dirigido"
+  },
+  "rondas": [
+    {
+      "ronda": 1,
+      "elegibles": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "seleccion": [
+        "P3",
+        "P5",
+        "P1"
+      ],
+      "utilidad_conjunta_f_S": 41.68,
+      "traza_seleccion": [
+        {
+          "paso": 1,
+          "ganancias_marginales": {
+            "P1": 14.2,
+            "P2": 18.2,
+            "P3": 19.2,
+            "P4": 17.1,
+            "P5": 15.2
+          },
+          "elegido": "P3",
+          "ganancia_elegida": 19.2,
+          "utilidad_acumulada": 19.2
+        },
+        {
+          "paso": 2,
+          "ganancias_marginales": {
+            "P1": 12.76,
+            "P2": 6.2,
+            "P4": 9.899999999999999,
+            "P5": 13.52
+          },
+          "elegido": "P5",
+          "ganancia_elegida": 13.52,
+          "utilidad_acumulada": 32.72
+        },
+        {
+          "paso": 3,
+          "ganancias_marginales": {
+            "P1": 8.96,
+            "P2": 5.6,
+            "P4": 1.08
+          },
+          "elegido": "P1",
+          "ganancia_elegida": 8.96,
+          "utilidad_acumulada": 41.68
+        }
+      ],
+      "reparto": {
+        "P3": 4,
+        "P5": 2,
+        "P1": 4
+      },
+      "utilidad_reparto": 45.29514467156319,
+      "presupuesto_usado": 10,
+      "presupuesto_sobrante": 0,
+      "traza_reparto": [
+        {
+          "unidad": 1,
+          "nodo": "P3",
+          "ganancia_marginal": 8.317766166719343,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 8.317766166719343
+        },
+        {
+          "unidad": 2,
+          "nodo": "P1",
+          "ganancia_marginal": 6.931471805599453,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 15.249237972318795
+        },
+        {
+          "unidad": 3,
+          "nodo": "P5",
+          "ganancia_marginal": 6.238324625039508,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 21.487562597358302
+        },
+        {
+          "unidad": 4,
+          "nodo": "P3",
+          "ganancia_marginal": 4.865581297297973,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 26.353143894656274
+        },
+        {
+          "unidad": 5,
+          "nodo": "P1",
+          "ganancia_marginal": 4.054651081081644,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 30.407794975737918
+        },
+        {
+          "unidad": 6,
+          "nodo": "P5",
+          "ganancia_marginal": 3.6491859729734797,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 34.0569809487114
+        },
+        {
+          "unidad": 7,
+          "nodo": "P3",
+          "ganancia_marginal": 3.452184869421371,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 37.50916581813277
+        },
+        {
+          "unidad": 8,
+          "nodo": "P1",
+          "ganancia_marginal": 2.876820724517809,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 40.38598654265058
+        },
+        {
+          "unidad": 9,
+          "nodo": "P3",
+          "ganancia_marginal": 2.6777226157705174,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 43.0637091584211
+        },
+        {
+          "unidad": 10,
+          "nodo": "P1",
+          "ganancia_marginal": 2.2314355131420975,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 45.29514467156319
+        }
+      ],
+      "costo_participacion": 11,
+      "presupuesto_restante_despues": {
+        "P3": 0,
+        "P5": 0,
+        "P1": 0
+      },
+      "tiempo_ms": {
+        "seleccion": 0.013099999932819628,
+        "reparto": 0.005200000032345997
+      },
+      "verificacion": [
+        {
+          "restriccion": "|S| = k",
+          "cumple": true,
+          "detalle": "|S| = 3, k = 3, elegibles = 5",
+          "informativa": false
+        },
+        {
+          "restriccion": "S sin repetidos y solo con nodos elegibles",
+          "cumple": true,
+          "detalle": "S = ['P3', 'P5', 'P1']",
+          "informativa": false
+        },
+        {
+          "restriccion": "Σ x_i <= B",
+          "cumple": true,
+          "detalle": "Σ x_i = 10, B = 10",
+          "informativa": false
+        },
+        {
+          "restriccion": "x_i enteros y 0 <= x_i <= presupuesto restante del nodo",
+          "cumple": true,
+          "detalle": "P3: 4 <= 4; P5: 2 <= 2; P1: 4 <= 4",
+          "informativa": false
+        },
+        {
+          "restriccion": "u_i creciente y cóncava (ganancias marginales >= 0 y no crecientes)",
+          "cumple": true,
+          "detalle": "revisado para cada nodo seleccionado hasta su tope",
+          "informativa": false
+        },
+        {
+          "restriccion": "Costo de participación <= presupuesto de costos (variante 1, no impuesta en la base)",
+          "cumple": true,
+          "detalle": "costo = 11, presupuesto = 12",
+          "informativa": true
+        },
+        {
+          "restriccion": "f(S_voraz) >= (1 - 1/e)·OPT",
+          "cumple": true,
+          "detalle": "razón = 1.000000 >= 0.632121",
+          "informativa": false
+        },
+        {
+          "restriccion": "Reparto voraz = óptimo por programación dinámica",
+          "cumple": true,
+          "detalle": "voraz = 45.295145, DP = 45.295145",
+          "informativa": false
+        }
+      ],
+      "comparacion_con_optimo": {
+        "seleccion": {
+          "subconjuntos_revisados": 10,
+          "S_optimo": [
+            "P1",
+            "P3",
+            "P5"
+          ],
+          "f_optimo": 41.68,
+          "f_voraz": 41.68,
+          "razon": 1.0,
+          "cota_1_menos_1_e": 0.6321205588285577
+        },
+        "reparto": {
+          "utilidad_dp": 45.29514467156319,
+          "utilidad_voraz": 45.29514467156319
+        }
+      }
+    },
+    {
+      "ronda": 2,
+      "elegibles": [
+        "P2",
+        "P4"
+      ],
+      "seleccion": [
+        "P2",
+        "P4"
+      ],
+      "utilidad_conjunta_f_S": 32.42,
+      "traza_seleccion": [
+        {
+          "paso": 1,
+          "ganancias_marginales": {
+            "P2": 18.2,
+            "P4": 17.1
+          },
+          "elegido": "P2",
+          "ganancia_elegida": 18.2,
+          "utilidad_acumulada": 18.2
+        },
+        {
+          "paso": 2,
+          "ganancias_marginales": {
+            "P4": 14.22
+          },
+          "elegido": "P4",
+          "ganancia_elegida": 14.22,
+          "utilidad_acumulada": 32.42
+        }
+      ],
+      "reparto": {
+        "P2": 4,
+        "P4": 2
+      },
+      "utilidad_reparto": 19.46717703148146,
+      "presupuesto_usado": 6,
+      "presupuesto_sobrante": 4,
+      "traza_reparto": [
+        {
+          "unidad": 1,
+          "nodo": "P2",
+          "ganancia_marginal": 5.545177444479562,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 5.545177444479562
+        },
+        {
+          "unidad": 2,
+          "nodo": "P4",
+          "ganancia_marginal": 4.1588830833596715,
+          "unidades_del_nodo": 1,
+          "utilidad_acumulada": 9.704060527839234
+        },
+        {
+          "unidad": 3,
+          "nodo": "P2",
+          "ganancia_marginal": 3.243720864865315,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 12.947781392704549
+        },
+        {
+          "unidad": 4,
+          "nodo": "P4",
+          "ganancia_marginal": 2.4327906486489863,
+          "unidades_del_nodo": 2,
+          "utilidad_acumulada": 15.380572041353535
+        },
+        {
+          "unidad": 5,
+          "nodo": "P2",
+          "ganancia_marginal": 2.301456579614247,
+          "unidades_del_nodo": 3,
+          "utilidad_acumulada": 17.68202862096778
+        },
+        {
+          "unidad": 6,
+          "nodo": "P2",
+          "ganancia_marginal": 1.7851484105136781,
+          "unidades_del_nodo": 4,
+          "utilidad_acumulada": 19.46717703148146
+        }
+      ],
+      "costo_participacion": 6,
+      "presupuesto_restante_despues": {
+        "P2": 0,
+        "P4": 0
+      },
+      "tiempo_ms": {
+        "seleccion": 0.005799999826194835,
+        "reparto": 0.0037000002066633897
+      },
+      "verificacion": [
+        {
+          "restriccion": "|S| = k",
+          "cumple": true,
+          "detalle": "|S| = 2, k = 3, elegibles = 2",
+          "informativa": false
+        },
+        {
+          "restriccion": "S sin repetidos y solo con nodos elegibles",
+          "cumple": true,
+          "detalle": "S = ['P2', 'P4']",
+          "informativa": false
+        },
+        {
+          "restriccion": "Σ x_i <= B",
+          "cumple": true,
+          "detalle": "Σ x_i = 6, B = 10",
+          "informativa": false
+        },
+        {
+          "restriccion": "x_i enteros y 0 <= x_i <= presupuesto restante del nodo",
+          "cumple": true,
+          "detalle": "P2: 4 <= 4; P4: 2 <= 2",
+          "informativa": false
+        },
+        {
+          "restriccion": "u_i creciente y cóncava (ganancias marginales >= 0 y no crecientes)",
+          "cumple": true,
+          "detalle": "revisado para cada nodo seleccionado hasta su tope",
+          "informativa": false
+        },
+        {
+          "restriccion": "Costo de participación <= presupuesto de costos (variante 1, no impuesta en la base)",
+          "cumple": true,
+          "detalle": "costo = 6, presupuesto = 12",
+          "informativa": true
+        },
+        {
+          "restriccion": "f(S_voraz) >= (1 - 1/e)·OPT",
+          "cumple": true,
+          "detalle": "razón = 1.000000 >= 0.632121",
+          "informativa": false
+        },
+        {
+          "restriccion": "Reparto voraz = óptimo por programación dinámica",
+          "cumple": true,
+          "detalle": "voraz = 19.467177, DP = 19.467177",
+          "informativa": false
+        }
+      ],
+      "comparacion_con_optimo": {
+        "seleccion": {
+          "subconjuntos_revisados": 1,
+          "S_optimo": [
+            "P2",
+            "P4"
+          ],
+          "f_optimo": 32.42,
+          "f_voraz": 32.42,
+          "razon": 1.0,
+          "cota_1_menos_1_e": 0.6321205588285577
+        },
+        "reparto": {
+          "utilidad_dp": 19.46717703148146,
+          "utilidad_voraz": 19.46717703148146
+        }
+      }
+    },
+    {
+      "ronda": 3,
+      "elegibles": [],
+      "seleccion": [],
+      "utilidad_conjunta_f_S": 0.0,
+      "traza_seleccion": [],
+      "reparto": {},
+      "utilidad_reparto": 0.0,
+      "presupuesto_usado": 0,
+      "presupuesto_sobrante": 10,
+      "traza_reparto": [],
+      "costo_participacion": 0,
+      "presupuesto_restante_despues": {},
+      "tiempo_ms": {
+        "seleccion": 0.0007000001005508238,
+        "reparto": 0.0008999998044600943
+      },
+      "verificacion": [
+        {
+          "restriccion": "|S| = k",
+          "cumple": true,
+          "detalle": "|S| = 0, k = 3, elegibles = 0",
+          "informativa": false
+        },
+        {
+          "restriccion": "S sin repetidos y solo con nodos elegibles",
+          "cumple": true,
+          "detalle": "S = []",
+          "informativa": false
+        },
+        {
+          "restriccion": "Σ x_i <= B",
+          "cumple": true,
+          "detalle": "Σ x_i = 0, B = 10",
+          "informativa": false
+        },
+        {
+          "restriccion": "x_i enteros y 0 <= x_i <= presupuesto restante del nodo",
+          "cumple": true,
+          "detalle": "",
+          "informativa": false
+        },
+        {
+          "restriccion": "u_i creciente y cóncava (ganancias marginales >= 0 y no crecientes)",
+          "cumple": true,
+          "detalle": "revisado para cada nodo seleccionado hasta su tope",
+          "informativa": false
+        },
+        {
+          "restriccion": "Costo de participación <= presupuesto de costos (variante 1, no impuesta en la base)",
+          "cumple": true,
+          "detalle": "costo = 0, presupuesto = 12",
+          "informativa": true
+        },
+        {
+          "restriccion": "f(S_voraz) >= (1 - 1/e)·OPT",
+          "cumple": true,
+          "detalle": "razón = 1.000000 >= 0.632121",
+          "informativa": false
+        },
+        {
+          "restriccion": "Reparto voraz = óptimo por programación dinámica",
+          "cumple": true,
+          "detalle": "voraz = 0.000000, DP = 0.000000",
+          "informativa": false
+        }
+      ],
+      "comparacion_con_optimo": {
+        "seleccion": {
+          "subconjuntos_revisados": 1,
+          "S_optimo": [],
+          "f_optimo": 0.0,
+          "f_voraz": 0.0,
+          "razon": 1.0,
+          "cota_1_menos_1_e": 0.6321205588285577
+        },
+        "reparto": {
+          "utilidad_dp": 0.0,
+          "utilidad_voraz": 0.0
+        }
+      }
+    }
+  ],
+  "gasto_total_por_nodo": {
+    "P1": 4,
+    "P2": 4,
+    "P3": 4,
+    "P4": 2,
+    "P5": 2
+  },
+  "topes_por_nodo_respetados": true,
+  "utilidad_conjunta_total": 74.1,
+  "utilidad_reparto_total": 64.76232170304465,
+  "tiempo_algoritmo_ms": {
+    "mediana": 0.035499999967214535,
+    "minimo": 0.03399999991415825,
+    "repeticiones": 5
+  },
+  "tiempo_verificacion_ms": 0.11990000007244817,
+  "todas_las_restricciones_cumplen": true
+}

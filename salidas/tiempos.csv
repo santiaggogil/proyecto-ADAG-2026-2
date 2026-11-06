@@ -1,0 +1,7 @@
+caso,N,k,B,T,tiempo_mediana_ms,tiempo_minimo_ms,utilidad_conjunta_total,utilidad_reparto_total,restricciones_cumplen
+entrada_G2_red_15_nodos,15,5,30,3,0.3121,0.3055,436.738560,262.738681,True
+propio_01_pequeno_6_nodos,6,2,8,2,0.0677,0.0591,75.720000,61.158641,True
+propio_02_sin_aristas_6_nodos,6,3,9,1,0.0261,0.0225,28.000000,39.480190,True
+propio_03_topes_agotados_5_nodos,5,3,10,3,0.0355,0.0340,74.100000,64.762322,True
+propio_04_aleatorio_30_nodos,30,4,30,3,0.7822,0.7510,650.352257,272.878920,True
+propio_05_aleatorio_60_nodos,60,6,40,3,3.9101,3.8789,1294.640720,433.186535,True

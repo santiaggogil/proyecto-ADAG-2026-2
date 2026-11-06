@@ -1,0 +1,47 @@
+{
+  "parametros": {
+    "numero_nodos": 6,
+    "numero_rondas": 1,
+    "cupo_participantes_por_ronda_k": 3,
+    "presupuesto_ruido_por_ronda_B": 9
+  },
+  "grafo": [],
+  "nodos": [
+    {
+      "id": "N1",
+      "coeficiente_utilidad": 3.0,
+      "presupuesto_total_nodo": 9,
+      "costo_participacion": 1
+    },
+    {
+      "id": "N2",
+      "coeficiente_utilidad": 9.0,
+      "presupuesto_total_nodo": 9,
+      "costo_participacion": 1
+    },
+    {
+      "id": "N3",
+      "coeficiente_utilidad": 5.0,
+      "presupuesto_total_nodo": 9,
+      "costo_participacion": 1
+    },
+    {
+      "id": "N4",
+      "coeficiente_utilidad": 12.0,
+      "presupuesto_total_nodo": 9,
+      "costo_participacion": 1
+    },
+    {
+      "id": "N5",
+      "coeficiente_utilidad": 7.0,
+      "presupuesto_total_nodo": 9,
+      "costo_participacion": 1
+    },
+    {
+      "id": "N6",
+      "coeficiente_utilidad": 1.0,
+      "presupuesto_total_nodo": 9,
+      "costo_participacion": 1
+    }
+  ]
+}

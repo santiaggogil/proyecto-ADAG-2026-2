@@ -1,0 +1,31 @@
+Parte 1, variando B
+    {'N': 100, 'B': 2000, 'tiempo_s': 0.000954, 'teorico': 13387.71238}
+    {'N': 100, 'B': 4000, 'tiempo_s': 0.001885, 'teorico': 26675.424759}
+    {'N': 100, 'B': 8000, 'tiempo_s': 0.00375, 'teorico': 53250.849518}
+    {'N': 100, 'B': 16000, 'tiempo_s': 0.007529, 'teorico': 106401.699036}
+    {'N': 100, 'B': 32000, 'tiempo_s': 0.016023, 'teorico': 212703.398073}
+    {'N': 100, 'B': 64000, 'tiempo_s': 0.036768, 'teorico': 425306.796146}
+Parte 1, variando N
+    {'N': 16, 'B': 20000, 'tiempo_s': 0.008854, 'teorico': 80016.0}
+    {'N': 64, 'B': 20000, 'tiempo_s': 0.009325, 'teorico': 120064.0}
+    {'N': 256, 'B': 20000, 'tiempo_s': 0.009902, 'teorico': 160256.0}
+    {'N': 1024, 'B': 20000, 'tiempo_s': 0.011339, 'teorico': 201024.0}
+    {'N': 4096, 'B': 20000, 'tiempo_s': 0.01366, 'teorico': 244096.0}
+    {'N': 16384, 'B': 20000, 'tiempo_s': 0.019782, 'teorico': 296384.0}
+Parte 2, variando N
+    {'N': 50, 'k': 10, 'tiempo_s': 0.001427, 'teorico': 23250}
+    {'N': 100, 'k': 10, 'tiempo_s': 0.005445, 'teorico': 96500}
+    {'N': 200, 'k': 10, 'tiempo_s': 0.02074, 'teorico': 393000}
+    {'N': 400, 'k': 10, 'tiempo_s': 0.082494, 'teorico': 1586000}
+    {'N': 800, 'k': 10, 'tiempo_s': 0.324141, 'teorico': 6372000}
+    {'N': 1600, 'k': 10, 'tiempo_s': 1.338437, 'teorico': 25544000}
+Parte 2, variando k
+    {'N': 400, 'k': 5, 'tiempo_s': 0.042013, 'teorico': 798000}
+    {'N': 400, 'k': 10, 'tiempo_s': 0.087867, 'teorico': 1586000}
+    {'N': 400, 'k': 20, 'tiempo_s': 0.158748, 'teorico': 3132000}
+    {'N': 400, 'k': 40, 'tiempo_s': 0.309546, 'teorico': 6104000}
+    {'N': 400, 'k': 80, 'tiempo_s': 0.58665, 'teorico': 11568000}
+    {'N': 400, 'k': 160, 'tiempo_s': 1.05178, 'teorico': 20576000}
+Razón probabilistica: min=0.9349 media=0.9888 óptimo exacto en 88/200
+Razón conjuntos: min=0.8824 media=0.9862 óptimo exacto en 158/200
+Reparto: voraz = DP en 300/300 (máx. diferencia 5.68e-14)
