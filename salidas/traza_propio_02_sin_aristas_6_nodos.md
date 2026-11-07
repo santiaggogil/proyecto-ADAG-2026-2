@@ -47,7 +47,7 @@ Reparto: N4: 4, N2: 3, N5: 2 — utilidad Σu_i(x_i) = 39.4802; usado 9 de 9
 | f(S_voraz) >= (1 - 1/e)·OPT | Sí | razón = 1.000000 >= 0.632121 |
 | Reparto voraz = óptimo por programación dinámica | Sí | voraz = 39.480190, DP = 39.480190 |
 
-Tiempo: selección 0.015 ms, reparto 0.005 ms
+Tiempo: selección 0.014 ms, reparto 0.005 ms
 
 ## Resumen
 
@@ -55,5 +55,5 @@ Tiempo: selección 0.015 ms, reparto 0.005 ms
 - Topes por nodo respetados: Sí
 - Utilidad conjunta total (Σ_t f(S_t)): 28.0000
 - Utilidad de reparto total (Σ_t Σ_i u_i(x_i)): 39.4802
-- Tiempo del algoritmo (mediana de 5): 0.026 ms
+- Tiempo del algoritmo (mediana de 5): 0.023 ms
 - Todas las restricciones obligatorias cumplen: Sí

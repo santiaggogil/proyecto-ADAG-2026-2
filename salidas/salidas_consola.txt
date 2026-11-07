@@ -8,7 +8,7 @@ Caso: entrada_G2_red_15_nodos  (N=15, k=5, B=30, T=3)
   Ronda 3: S = ['N11', 'N14', 'N09', 'N15', 'N13']  f(S) = 145.5795
            reparto = N11:8, N14:4, N09:4, N15:6, N13:8  utilidad = 85.6108
            óptimo f = 145.9072  razón voraz/óptimo = 0.9978
-  Tiempo algoritmo (mediana): 0.312 ms
+  Tiempo algoritmo (mediana): 0.306 ms
   Restricciones obligatorias: CUMPLEN
 
 Caso: propio_01_pequeno_6_nodos  (N=6, k=2, B=8, T=2)
@@ -18,14 +18,14 @@ Caso: propio_01_pequeno_6_nodos  (N=6, k=2, B=8, T=2)
   Ronda 2: S = ['A', 'D']  f(S) = 37.8600
            reparto = A:4, D:4  utilidad = 30.5793
            óptimo f = 37.8600  razón voraz/óptimo = 1.0000
-  Tiempo algoritmo (mediana): 0.068 ms
+  Tiempo algoritmo (mediana): 0.060 ms
   Restricciones obligatorias: CUMPLEN
 
 Caso: propio_02_sin_aristas_6_nodos  (N=6, k=3, B=9, T=1)
   Ronda 1: S = ['N4', 'N2', 'N5']  f(S) = 28.0000
            reparto = N4:4, N2:3, N5:2  utilidad = 39.4802
            óptimo f = 28.0000  razón voraz/óptimo = 1.0000
-  Tiempo algoritmo (mediana): 0.026 ms
+  Tiempo algoritmo (mediana): 0.023 ms
   Restricciones obligatorias: CUMPLEN
 
 Caso: propio_03_topes_agotados_5_nodos  (N=5, k=3, B=10, T=3)
@@ -38,7 +38,7 @@ Caso: propio_03_topes_agotados_5_nodos  (N=5, k=3, B=10, T=3)
   Ronda 3: S = []  f(S) = 0.0000
            reparto =   utilidad = 0.0000
            óptimo f = 0.0000  razón voraz/óptimo = 1.0000
-  Tiempo algoritmo (mediana): 0.035 ms
+  Tiempo algoritmo (mediana): 0.057 ms
   Restricciones obligatorias: CUMPLEN
 
 Caso: propio_04_aleatorio_30_nodos  (N=30, k=4, B=30, T=3)
@@ -51,7 +51,7 @@ Caso: propio_04_aleatorio_30_nodos  (N=30, k=4, B=30, T=3)
   Ronda 3: S = ['N14', 'N22', 'N30', 'N10']  f(S) = 216.7841
            reparto = N14:8, N22:8, N30:7, N10:7  utilidad = 90.6377
            óptimo f = 224.2312  razón voraz/óptimo = 0.9668
-  Tiempo algoritmo (mediana): 0.782 ms
+  Tiempo algoritmo (mediana): 0.934 ms
   Restricciones obligatorias: CUMPLEN
 
 Caso: propio_05_aleatorio_60_nodos  (N=60, k=6, B=40, T=3)
@@ -61,7 +61,7 @@ Caso: propio_05_aleatorio_60_nodos  (N=60, k=6, B=40, T=3)
            reparto = N17:7, N03:8, N09:6, N44:7, N11:5, N10:7  utilidad = 145.7018
   Ronda 3: S = ['N17', 'N03', 'N09', 'N44', 'N11', 'N10']  f(S) = 431.5469
            reparto = N17:6, N03:4, N09:8, N44:6, N11:10, N10:6  utilidad = 141.7829
-  Tiempo algoritmo (mediana): 3.910 ms
+  Tiempo algoritmo (mediana): 3.686 ms
   Restricciones obligatorias: CUMPLEN
 
 Resultados escritos en: C:\UNIVERSIDAD\NOVENO\Analisis\Proyecto\proyecto_adag_g2\salidas

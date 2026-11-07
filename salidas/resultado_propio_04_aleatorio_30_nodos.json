@@ -432,8 +432,8 @@
         "N10": 15
       },
       "tiempo_ms": {
-        "seleccion": 0.233299999990777,
-        "reparto": 0.013800000033370452
+        "seleccion": 0.23759999999128922,
+        "reparto": 0.013800000004948743
       },
       "verificacion": [
         {
@@ -923,8 +923,8 @@
         "N10": 7
       },
       "tiempo_ms": {
-        "seleccion": 0.23320000013882236,
-        "reparto": 0.013800000033370452
+        "seleccion": 0.29359999999201136,
+        "reparto": 0.0473000000056345
       },
       "verificacion": [
         {
@@ -1414,8 +1414,8 @@
         "N10": 0
       },
       "tiempo_ms": {
-        "seleccion": 0.23250000003827154,
-        "reparto": 0.013600000102087506
+        "seleccion": 0.35749999997847226,
+        "reparto": 0.020100000000411455
       },
       "verificacion": [
         {
@@ -1524,10 +1524,10 @@
   "utilidad_conjunta_total": 650.3522567040001,
   "utilidad_reparto_total": 272.8789203103692,
   "tiempo_algoritmo_ms": {
-    "mediana": 0.7822000000032858,
-    "minimo": 0.7510000000365835,
+    "mediana": 0.9343000000114898,
+    "minimo": 0.7240000000194868,
     "repeticiones": 5
   },
-  "tiempo_verificacion_ms": 428.0729000001884,
+  "tiempo_verificacion_ms": 441.08129999997914,
   "todas_las_restricciones_cumplen": true
 }

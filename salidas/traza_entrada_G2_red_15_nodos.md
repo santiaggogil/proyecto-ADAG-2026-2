@@ -73,7 +73,7 @@ Reparto: N11: 5, N14: 7, N09: 7, N15: 6, N13: 5 — utilidad Σu_i(x_i) = 88.564
 | f(S_voraz) >= (1 - 1/e)·OPT | Sí | razón = 0.997754 >= 0.632121 |
 | Reparto voraz = óptimo por programación dinámica | Sí | voraz = 88.563953, DP = 88.563953 |
 
-Tiempo: selección 0.170 ms, reparto 0.023 ms
+Tiempo: selección 0.080 ms, reparto 0.013 ms
 
 ## Ronda 2
 
@@ -144,7 +144,7 @@ Reparto: N11: 5, N14: 7, N09: 7, N15: 6, N13: 5 — utilidad Σu_i(x_i) = 88.564
 | f(S_voraz) >= (1 - 1/e)·OPT | Sí | razón = 0.997754 >= 0.632121 |
 | Reparto voraz = óptimo por programación dinámica | Sí | voraz = 88.563953, DP = 88.563953 |
 
-Tiempo: selección 0.156 ms, reparto 0.022 ms
+Tiempo: selección 0.081 ms, reparto 0.013 ms
 
 ## Ronda 3
 
@@ -215,7 +215,7 @@ Reparto: N11: 8, N14: 4, N09: 4, N15: 6, N13: 8 — utilidad Σu_i(x_i) = 85.610
 | f(S_voraz) >= (1 - 1/e)·OPT | Sí | razón = 0.997754 >= 0.632121 |
 | Reparto voraz = óptimo por programación dinámica | Sí | voraz = 85.610775, DP = 85.610775 |
 
-Tiempo: selección 0.151 ms, reparto 0.023 ms
+Tiempo: selección 0.081 ms, reparto 0.014 ms
 
 ## Resumen
 
@@ -223,5 +223,5 @@ Tiempo: selección 0.151 ms, reparto 0.023 ms
 - Topes por nodo respetados: Sí
 - Utilidad conjunta total (Σ_t f(S_t)): 436.7386
 - Utilidad de reparto total (Σ_t Σ_i u_i(x_i)): 262.7387
-- Tiempo del algoritmo (mediana de 5): 0.567 ms
+- Tiempo del algoritmo (mediana de 5): 0.306 ms
 - Todas las restricciones obligatorias cumplen: Sí

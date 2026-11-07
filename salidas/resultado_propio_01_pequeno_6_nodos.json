@@ -129,8 +129,8 @@
         "D": 4
       },
       "tiempo_ms": {
-        "seleccion": 0.019300000076327706,
-        "reparto": 0.007599999889862374
+        "seleccion": 0.018400000016072227,
+        "reparto": 0.007199999998874773
       },
       "verificacion": [
         {
@@ -315,8 +315,8 @@
         "D": 0
       },
       "tiempo_ms": {
-        "seleccion": 0.019800000018221908,
-        "reparto": 0.006600000006073969
+        "seleccion": 0.018900000014809848,
+        "reparto": 0.006299999995462713
       },
       "verificacion": [
         {
@@ -399,10 +399,10 @@
   "utilidad_conjunta_total": 75.72,
   "utilidad_reparto_total": 61.158640672495814,
   "tiempo_algoritmo_ms": {
-    "mediana": 0.06770000004507892,
-    "minimo": 0.05910000004405447,
+    "mediana": 0.060100000013108,
+    "minimo": 0.056199999988848504,
     "repeticiones": 5
   },
-  "tiempo_verificacion_ms": 0.19939999992857338,
+  "tiempo_verificacion_ms": 0.18620000000169057,
   "todas_las_restricciones_cumplen": true
 }

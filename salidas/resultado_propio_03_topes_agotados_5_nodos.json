@@ -154,8 +154,8 @@
         "P1": 0
       },
       "tiempo_ms": {
-        "seleccion": 0.013099999932819628,
-        "reparto": 0.005200000032345997
+        "seleccion": 0.02029999998853782,
+        "reparto": 0.00840000001289809
       },
       "verificacion": [
         {
@@ -315,8 +315,8 @@
         "P4": 0
       },
       "tiempo_ms": {
-        "seleccion": 0.005799999826194835,
-        "reparto": 0.0037000002066633897
+        "seleccion": 0.009399999981951623,
+        "reparto": 0.006299999995462713
       },
       "verificacion": [
         {
@@ -400,8 +400,8 @@
       "costo_participacion": 0,
       "presupuesto_restante_despues": {},
       "tiempo_ms": {
-        "seleccion": 0.0007000001005508238,
-        "reparto": 0.0008999998044600943
+        "seleccion": 0.001099999991538425,
+        "reparto": 0.001200000014023317
       },
       "verificacion": [
         {
@@ -480,10 +480,10 @@
   "utilidad_conjunta_total": 74.1,
   "utilidad_reparto_total": 64.76232170304465,
   "tiempo_algoritmo_ms": {
-    "mediana": 0.035499999967214535,
-    "minimo": 0.03399999991415825,
+    "mediana": 0.05679999998164931,
+    "minimo": 0.05419999999389802,
     "repeticiones": 5
   },
-  "tiempo_verificacion_ms": 0.11990000007244817,
+  "tiempo_verificacion_ms": 0.18699999998261774,
   "todas_las_restricciones_cumplen": true
 }
